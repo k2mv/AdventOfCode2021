@@ -1,5 +1,7 @@
 # 01
 
+Answer for https://adventofcode.com/2021/day/1
+
 Getting back into Python after a big break since (checks notes) Advent of Code 2020.
 
 Journal:

@@ -30,16 +30,18 @@ def process_input(lines):
 lines = process_input(lines)
 horizontal_position = 0
 depth = 0
+aim = 0
 
 for l in lines:
     command = l[0]
     distance = int(l[1])
     if command == 'forward':
         horizontal_position += distance
+        depth += aim * distance
     elif command == 'down':
-        depth += distance
+        aim += distance
     elif command == 'up':
-        depth -= distance
+        aim -= distance
 
 answer = horizontal_position * depth
 print(answer)
